@@ -2,6 +2,8 @@ package br.ada.customer.crud.usecases;
 
 import br.ada.customer.crud.model.Customer;
 import br.ada.customer.crud.model.Order;
+import br.ada.customer.crud.model.OrderItem;
+import br.ada.customer.crud.model.Product;
 
 public interface ICreateOrderUseCase {
 
@@ -12,5 +14,11 @@ public interface ICreateOrderUseCase {
      * 3 - Lembrar de atualizar o banco através do repository
      */
     Order create(Customer customer);
+
+    OrderItem changeAmount(Order order, Product product, Integer amount);
+
+    void removeItem(Order order, Product product);
+
+    //Notifica que um pedido está aguardando pagamento
 
 }

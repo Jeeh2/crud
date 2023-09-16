@@ -1,5 +1,6 @@
 package br.ada.customer.crud.usecases;
 
+//notificação por email ou sms
 public interface INotifierUserCase<T> {
 
     void registered(T object);

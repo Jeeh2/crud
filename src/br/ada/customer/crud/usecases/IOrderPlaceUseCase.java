@@ -2,6 +2,7 @@ package br.ada.customer.crud.usecases;
 
 import br.ada.customer.crud.model.Order;
 
+//finalizar o pedido
 public interface IOrderPlaceUseCase {
 
     /*
